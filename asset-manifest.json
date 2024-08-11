@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/JUG_Portfolio/static/css/main.b519bcb8.css",
-    "main.js": "/JUG_Portfolio/static/js/main.2e768ccd.js",
-    "static/js/453.ed3810f9.chunk.js": "/JUG_Portfolio/static/js/453.ed3810f9.chunk.js",
+    "main.js": "/JUG_Portfolio/static/js/main.bd9cd533.js",
+    "static/js/453.68693753.chunk.js": "/JUG_Portfolio/static/js/453.68693753.chunk.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/JUG_Portfolio/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "index.html": "/JUG_Portfolio/index.html",
     "main.b519bcb8.css.map": "/JUG_Portfolio/static/css/main.b519bcb8.css.map",
-    "main.2e768ccd.js.map": "/JUG_Portfolio/static/js/main.2e768ccd.js.map",
-    "453.ed3810f9.chunk.js.map": "/JUG_Portfolio/static/js/453.ed3810f9.chunk.js.map"
+    "main.bd9cd533.js.map": "/JUG_Portfolio/static/js/main.bd9cd533.js.map",
+    "453.68693753.chunk.js.map": "/JUG_Portfolio/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b519bcb8.css",
-    "static/js/main.2e768ccd.js"
+    "static/js/main.bd9cd533.js"
   ]
 }
