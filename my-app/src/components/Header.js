@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "@mui/material";
 
-const StyledHeader = styled.header``;
+const StyledHeader = styled.header`
+  position: fixed;
+  width: 100%;
+`;
 
 const StyledHeaderContent = styled.div`
   display: flex;
@@ -17,6 +20,12 @@ const StyledNav = styled.nav`
   font-size: 16px;
 `;
 
+const StyledLink = styled(Link)(({ theme }) => ({
+  "&:hover": {
+    color: "White", // hover 시 색상 변경
+  },
+}));
+
 const navLinks = [
   { href: "#", name: "About me" },
   { href: "#", name: "Skills" },
@@ -29,15 +38,20 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledHeaderContent>
-        <Link href="#" underline="none" fontSize="24px">
+        <StyledLink href="#" underline="none" fontSize="24px" color="#FFFFFFB2">
           JUG's portfolio
-        </Link>
+        </StyledLink>
         <StyledNav>
           {navLinks.map((link) => {
             return (
-              <Link href={link.href} underline="none" padding="0px 16px">
+              <StyledLink
+                href={link.href}
+                underline="none"
+                padding="0px 16px"
+                color="#FFFFFFB2"
+              >
                 {link.name}
-              </Link>
+              </StyledLink>
             );
           })}
         </StyledNav>
