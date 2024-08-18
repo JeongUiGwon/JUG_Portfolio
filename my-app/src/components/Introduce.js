@@ -20,7 +20,7 @@ theme = createTheme(theme, {
   },
 });
 
-const StyledIntroduce = styled.div`
+const StyledIntroduce = styled.section`
   width: 100%;
   height: 400px;
   background-image: linear-gradient(
@@ -58,9 +58,15 @@ const StyledDescription = styled.div`
 `;
 
 const Introduce = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <ThemeProvider theme={theme}>
-      <StyledIntroduce>
+      <StyledIntroduce id="introduce">
         <StyledIntroduceContent>
           <StyledTitle>
             - 정의권 - <br /> C/C++/C# 개발자 포트폴리오
@@ -79,6 +85,7 @@ const Introduce = () => {
               padding: "16px 32px",
               fontSize: "16px",
             }}
+            onClick={() => scrollToSection("about-me")}
           >
             더 알아보기 ↓
           </Button>

@@ -22,33 +22,46 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled(Link)(({ theme }) => ({
   "&:hover": {
-    color: "White", // hover 시 색상 변경
+    color: "White",
   },
 }));
 
 const navLinks = [
-  { href: "#", name: "About me" },
-  { href: "#", name: "Skills" },
-  { href: "#", name: "Archive" },
-  { href: "#", name: "Projects" },
-  { href: "#", name: "Career" },
+  { href: "about-me", name: "About me" },
+  { href: "introduce", name: "Skills" },
+  { href: "introduce", name: "Archive" },
+  { href: "introduce", name: "Projects" },
+  { href: "introduce", name: "Career" },
 ];
 
 const Header = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <StyledHeader>
       <StyledHeaderContent>
-        <StyledLink href="#" underline="none" fontSize="24px" color="#FFFFFFB2">
+        <StyledLink
+          component="button"
+          underline="none"
+          fontSize="24px"
+          color="#FFFFFFB2"
+          onClick={() => scrollToSection("introduce")}
+        >
           JUG's portfolio
         </StyledLink>
         <StyledNav>
           {navLinks.map((link) => {
             return (
               <StyledLink
-                href={link.href}
+                component="button"
                 underline="none"
-                padding="0px 16px"
                 color="#FFFFFFB2"
+                sx={{ padding: "0px 16px" }}
+                onClick={() => scrollToSection(link.href)}
               >
                 {link.name}
               </StyledLink>
