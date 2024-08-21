@@ -69,7 +69,7 @@ const Introduce = () => {
       <StyledIntroduce id="introduce">
         <StyledIntroduceContent>
           <StyledTitle>
-            - 정의권 - <br /> C/C++/C# 개발자 포트폴리오
+            - 정의권 - <br /> 임베디드 개발자 포트폴리오
           </StyledTitle>
           <StyledHr />
           <StyledDescription>

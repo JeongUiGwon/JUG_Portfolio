@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import LinkIcon from "@mui/icons-material/Link";
 import PersonIcon from "@mui/icons-material/Person";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PlaceIcon from "@mui/icons-material/Place";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import SchoolIcon from "@mui/icons-material/School";
+import ContentTitle from "./ContentTitle";
 
 const StyledAboutMe = styled.section`
   display: flex;
@@ -17,31 +17,6 @@ const StyledAboutMeContent = styled.div`
   max-width: 1140px;
   padding: 64px 32px;
 `;
-
-const StyledAboutMeTitle = styled.div`
-  font-size: 48px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const StyledTitle = styled.div`
-  border-bottom: 1px solid #cccccc;
-  position: relative;
-  margin-bottom: 48px;
-`;
-
-const StyledLinkIcon = styled(LinkIcon)(({ theme }) => ({
-  position: "absolute",
-  left: "-60px",
-  top: "25%",
-  cursor: "pointer",
-  color: "#828282",
-  "&:hover": {
-    color: "#212529", // hover 시 색상 변경
-  },
-}));
 
 const StyledAboutMeInfo = styled.div`
   display: flex;
@@ -85,25 +60,10 @@ const StyledAboutMeDescription = styled.div`
 `;
 
 const AboutMe = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <StyledAboutMe id="about-me">
       <StyledAboutMeContent>
-        <StyledAboutMeTitle>
-          <StyledTitle>
-            <StyledLinkIcon
-              sx={{ fontSize: 42 }}
-              onClick={() => scrollToSection("about-me")}
-            />
-            ABOUT ME
-          </StyledTitle>
-        </StyledAboutMeTitle>
+        <ContentTitle title="ABOUT ME" sectionId="about-me" />
         <StyledAboutMeInfo>
           <StyledAboutMeInfoContent>
             <StyledInfo>

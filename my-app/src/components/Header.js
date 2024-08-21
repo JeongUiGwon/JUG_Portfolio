@@ -9,6 +9,7 @@ const StyledHeader = styled.header`
     isScrolled ? "white" : "transparent"};
   box-shadow: ${({ isScrolled }) =>
     isScrolled ? "0 1px .3rem hsla(0,0%,80%,.8)" : "none"};
+  z-index: 10;
 `;
 
 const StyledHeaderContent = styled.div`
@@ -33,7 +34,7 @@ const StyledLink = styled(Link)`
 
 const navLinks = [
   { href: "about-me", name: "About me" },
-  { href: "introduce", name: "Skills" },
+  { href: "skills", name: "Skills" },
   { href: "introduce", name: "Archive" },
   { href: "introduce", name: "Projects" },
   { href: "introduce", name: "Career" },
@@ -60,7 +61,14 @@ const Header = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+      const scrollPositionValue = section.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: scrollPositionValue,
+        behavior: "smooth",
+      });
     }
   };
 
