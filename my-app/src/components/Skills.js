@@ -25,7 +25,11 @@ const Skills = () => {
   return (
     <StyledSkills id="skills">
       <StyledSkillsContent>
-        <ContentTitle title="SKILLS" sectionId="skills" underline="black" />
+        <ContentTitle
+          title="SKILLS"
+          sectionId="skills"
+          borderBottomColor="black"
+        />
         <StyledSkillsInfo>
           <TechStack
             title="Frontend"

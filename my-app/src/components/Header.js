@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
 const navLinks = [
   { href: "about-me", name: "About me" },
   { href: "skills", name: "Skills" },
-  { href: "introduce", name: "Archive" },
+  { href: "archive", name: "Archive" },
   { href: "introduce", name: "Projects" },
   { href: "introduce", name: "Career" },
 ];

@@ -40,8 +40,9 @@ const StyledIntroduceContent = styled.div``;
 
 const StyledTitle = styled.div`
   color: white;
+  font-family: blackHanSans;
   font-size: 64px;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 const StyledHr = styled.hr`

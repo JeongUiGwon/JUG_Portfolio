@@ -63,7 +63,11 @@ const AboutMe = () => {
   return (
     <StyledAboutMe id="about-me">
       <StyledAboutMeContent>
-        <ContentTitle title="ABOUT ME" sectionId="about-me" />
+        <ContentTitle
+          title="ABOUT ME"
+          sectionId="about-me"
+          borderBottomColor="#cccccc"
+        />
         <StyledAboutMeInfo>
           <StyledAboutMeInfoContent>
             <StyledInfo>
