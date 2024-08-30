@@ -106,7 +106,7 @@ const AboutMe = () => {
               <LocalPhoneIcon sx={{ fontSize: 32, marginRight: "30px" }} />
               <StyledAboutMeInfoField>
                 <StyledFieldTitle>연락처</StyledFieldTitle>
-                <StyledFieldDescription>010-3058-5791</StyledFieldDescription>
+                <StyledFieldDescription>010-3058-****</StyledFieldDescription>
               </StyledAboutMeInfoField>
             </StyledInfo>
           </StyledAboutMeInfoContent>

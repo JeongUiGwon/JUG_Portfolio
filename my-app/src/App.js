@@ -4,6 +4,7 @@ import Introduce from "./components/Introduce";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Archive from "./components/Archive";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Archive />
+      <Projects />
     </div>
   );
 }

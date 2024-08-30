@@ -17,12 +17,12 @@ const StyledTitle = styled.div`
   color: ${(props) => props.titleColor};
 `;
 
-const StyledLinkIcon = styled(LinkIcon)(({ theme, hoverColor }) => ({
+const StyledLinkIcon = styled(LinkIcon)(({ theme, iconColor, hoverColor }) => ({
   position: "absolute",
   left: "-60px",
-  top: "25%",
+  top: "10%",
   cursor: "pointer",
-  color: "#828282",
+  color: iconColor || "#828282",
   "&:hover": {
     color: hoverColor || "#212529",
   },
@@ -33,6 +33,7 @@ const ContentTitle = ({
   sectionId,
   titleColor,
   borderBottomColor,
+  iconColor,
   hoverColor,
 }) => {
   const scrollToSection = (id) => {
@@ -59,6 +60,7 @@ const ContentTitle = ({
           sx={{ fontSize: 42 }}
           onClick={() => scrollToSection(sectionId)}
           hoverColor={hoverColor}
+          iconColor={iconColor}
         />
         {title}
       </StyledTitle>
