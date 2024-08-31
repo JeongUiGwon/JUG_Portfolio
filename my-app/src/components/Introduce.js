@@ -21,7 +21,6 @@ theme = createTheme(theme, {
 });
 
 const StyledIntroduce = styled.section`
-  width: 100%;
   height: 400px;
   background-image: linear-gradient(
       180deg,
@@ -34,6 +33,7 @@ const StyledIntroduce = styled.section`
   display: flex;
   justify-content: center;
   padding: 136px 32px 64px 32px;
+  position: relative;
 `;
 
 const StyledIntroduceContent = styled.div``;
