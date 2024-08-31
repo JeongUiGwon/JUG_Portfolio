@@ -80,6 +80,10 @@ const StyledProjectDescriptionItemValue = styledComponents.div`
 `;
 
 const ProjectPortfolio = () => {
+  const handleBtnClick = () => {
+    window.open("https://github.com/JeongUiGwon/JUG_Portfolio", "_blank");
+  };
+
   return (
     <StyledProjectWrapper>
       <StyledProjectTitle>Portfolio WebSite</StyledProjectTitle>
@@ -102,8 +106,11 @@ const ProjectPortfolio = () => {
             가독성을 높이는 데 집중했습니다. 제 작업을 통해 웹 개발에 대한 저의
             열정과 기술을 확인해 보세요!
             <p />
-            <BlackButton variant="contained">자세히 보기 ▶</BlackButton>
+            <BlackButton onClick={handleBtnClick} variant="contained">
+              자세히 보기 ▶
+            </BlackButton>
           </StyeldProjectDescriptionMain>
+
           <StyledProjectDescriptionItem>
             <StyledProjectDescriptionItemLabel>
               ✔ 주요 기능

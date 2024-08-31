@@ -37,7 +37,7 @@ const navLinks = [
   { href: "skills", name: "Skills" },
   { href: "archive", name: "Archive" },
   { href: "projects", name: "Projects" },
-  { href: "introduce", name: "Career" },
+  { href: "career", name: "Career" },
 ];
 
 const Header = () => {
