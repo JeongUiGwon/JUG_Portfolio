@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import ContentTitle from "./ContentTitle";
+import CareerUlvac from "./CareerUlvac";
 import CareerExicon from "./CareerExicon";
+import CareerSemics from "./CareerSemics";
 
 const StyledCareer = styled.section`
   display: flex;
@@ -25,7 +27,9 @@ const Career = () => {
       <StyledCareerContent>
         <ContentTitle title="CAREER" sectionId="career" />
         <StyledCareerInfo>
+          <CareerUlvac />
           <CareerExicon />
+          <CareerSemics />
         </StyledCareerInfo>
       </StyledCareerContent>
     </StyledCareer>

@@ -61,48 +61,35 @@ const StyledCareerInfoWorkPeriod = styled.h5`
   color: #6c757d;
 `;
 
-const CareerExicon = () => {
+const CareerUlvac = () => {
   return (
     <CareerWrapper>
       <CareerLogoContainer>
         <CareerLogoWrapper>
           <img
-            alt="EXICON logo"
-            src={process.env.PUBLIC_URL + "/images/EXICON_logo.png"}
+            alt="ULVAC logo"
+            src={process.env.PUBLIC_URL + "/images/ULVAC_logo.png"}
             width="95%"
           />
         </CareerLogoWrapper>
       </CareerLogoContainer>
       <StyledCareerInfo>
-        <StyledCareerInfoTitle>(주) 엑시콘</StyledCareerInfoTitle>
-        <StyledCareerInfoPeriod>2023.07 ~ 2024.09</StyledCareerInfoPeriod>
+        <StyledCareerInfoTitle>(주) ULVAC</StyledCareerInfoTitle>
+        <StyledCareerInfoPeriod>2024.10 ~ 현재</StyledCareerInfoPeriod>
         <StyledCareerInfoDescription>
-          <b>Global Test Solution Provider</b>로 반도체 테스터 제조회사입니다.
+          <b>세계 최고의 진공 기술</b>을 보유한 일본 기업입니다.
           <br />
           <br />
-          다양한 반도체 Test Solution 중에서도{" "}
-          <b>SSD(Solid State Drive) Test Solution</b>을 제공하고 있습니다.
-          고객사에게 <b>Linux OS 기반 SSD Test Solution 라이브러리</b>와{" "}
-          <b>디바이스 드라이버</b> 개발 및 유지/보수 업무 를 책임지고 있습니다.
-          주로 맡고 있는 SSD 프로토콜은 <b>NVMe/SAS/SATA</b> 입니다.
+          세계 최고의 진공 기술을 기반으로 <b>Etching과 PVD 장비</b> 등을 필두로
+          반도체 장비를 제공합니다. 1952년에 설립된 이래, ULVAC는 진공 시스템,
+          진공 펌프, 측정 장비 및 소재 관련 솔루션을 개발하여 글로벌 시장에서
+          중요한 위치를 차지하고 있습니다.
         </StyledCareerInfoDescription>
         <StyledCareerInfoWork>
-          <h4>▎NVMe/SAS/SATA 라이브러리 및 디바이스 드라이버 개발/유지/보수</h4>
+          <h4>▎반도체 설비 제어 Software 설계</h4>
           <StyledCareerInfoWorkPeriod>
-            2023.07 ~ 2024.09
+            2024.10 ~ 현재
           </StyledCareerInfoWorkPeriod>
-          <li style={{ marginBottom: "8px" }}>
-            NVMe/SAS/SATA Test Solution 라이브러리 개발(C++ 언어)
-          </li>
-          <li style={{ marginBottom: "8px" }}>
-            Linux OS 기반 NVMe/SAS/SATA 디바이스 드라이버 개발(C 언어)
-          </li>
-          <li style={{ marginBottom: "8px" }}>
-            Linux OS 기반 Shell 프로그래밍
-          </li>
-          <li style={{ marginBottom: "8px" }}>
-            SSD Test Solution Script 작성(C++ 언어)
-          </li>
           <li style={{ marginBottom: "8px" }}>GitLab과 JIRA 형상 관리 담당</li>
           <li style={{ marginBottom: "8px" }}>Release Note 관리 및 작성</li>
         </StyledCareerInfoWork>
@@ -111,4 +98,4 @@ const CareerExicon = () => {
   );
 };
 
-export default CareerExicon;
+export default CareerUlvac;

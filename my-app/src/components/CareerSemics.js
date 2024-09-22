@@ -61,54 +61,62 @@ const StyledCareerInfoWorkPeriod = styled.h5`
   color: #6c757d;
 `;
 
-const CareerExicon = () => {
+const CareerSemics = () => {
   return (
     <CareerWrapper>
       <CareerLogoContainer>
         <CareerLogoWrapper>
           <img
-            alt="EXICON logo"
-            src={process.env.PUBLIC_URL + "/images/EXICON_logo.png"}
+            alt="SEMICS logo"
+            src={process.env.PUBLIC_URL + "/images/SEMICS_logo.png"}
             width="95%"
           />
         </CareerLogoWrapper>
       </CareerLogoContainer>
       <StyledCareerInfo>
-        <StyledCareerInfoTitle>(주) 엑시콘</StyledCareerInfoTitle>
-        <StyledCareerInfoPeriod>2023.07 ~ 2024.09</StyledCareerInfoPeriod>
+        <StyledCareerInfoTitle>쎄믹스</StyledCareerInfoTitle>
+        <StyledCareerInfoPeriod>2020.09 ~ 2022.03</StyledCareerInfoPeriod>
         <StyledCareerInfoDescription>
-          <b>Global Test Solution Provider</b>로 반도체 테스터 제조회사입니다.
+          <b>EDS 공정 Wafer Prober</b> Global 반도체 장비 회사입니다.
           <br />
           <br />
-          다양한 반도체 Test Solution 중에서도{" "}
-          <b>SSD(Solid State Drive) Test Solution</b>을 제공하고 있습니다.
-          고객사에게 <b>Linux OS 기반 SSD Test Solution 라이브러리</b>와{" "}
-          <b>디바이스 드라이버</b> 개발 및 유지/보수 업무 를 책임지고 있습니다.
-          주로 맡고 있는 SSD 프로토콜은 <b>NVMe/SAS/SATA</b> 입니다.
+          <b>해외 CS 엔지니어</b>로 근무하였으며, 해외 Customer와의 소통과 기술
+          지원 업무를 맡았습니다. 주된 업무는 Wafer Prober 장비 이슈 대응
+          업무였으며, <b>반도체 설비 파라미터 검증 SW 개발</b> 프로젝트도
+          진행하였습니다.
         </StyledCareerInfoDescription>
         <StyledCareerInfoWork>
-          <h4>▎NVMe/SAS/SATA 라이브러리 및 디바이스 드라이버 개발/유지/보수</h4>
+          <h4>▎반도체 설비 파라미터 검증 SW 개발</h4>
           <StyledCareerInfoWorkPeriod>
-            2023.07 ~ 2024.09
+            2020.09 ~ 2020.12
           </StyledCareerInfoWorkPeriod>
           <li style={{ marginBottom: "8px" }}>
-            NVMe/SAS/SATA Test Solution 라이브러리 개발(C++ 언어)
+            반도체 설비 파라미터 검증 Window 기반 프로그램 개발(C# WPF)
+          </li>
+        </StyledCareerInfoWork>
+        <StyledCareerInfoWork>
+          <h4>▎해외 고객사 현장 지원 및 이슈 대응</h4>
+          <StyledCareerInfoWorkPeriod>
+            2020.09 ~ 2020.12
+          </StyledCareerInfoWorkPeriod>
+          <li style={{ marginBottom: "8px" }}>
+            Wafer Prober 설비 셋업 및 유지/보수
           </li>
           <li style={{ marginBottom: "8px" }}>
-            Linux OS 기반 NVMe/SAS/SATA 디바이스 드라이버 개발(C 언어)
+            Wafer Prober 설비 이슈 Trouble Shooting
           </li>
-          <li style={{ marginBottom: "8px" }}>
-            Linux OS 기반 Shell 프로그래밍
-          </li>
-          <li style={{ marginBottom: "8px" }}>
-            SSD Test Solution Script 작성(C++ 언어)
-          </li>
-          <li style={{ marginBottom: "8px" }}>GitLab과 JIRA 형상 관리 담당</li>
-          <li style={{ marginBottom: "8px" }}>Release Note 관리 및 작성</li>
+        </StyledCareerInfoWork>
+        <StyledCareerInfoWork>
+          <h4>▎해외 고객사 엔지니어 교육 및 지원</h4>
+          <StyledCareerInfoWorkPeriod>
+            2020.09 ~ 2020.12
+          </StyledCareerInfoWorkPeriod>
+          <li style={{ marginBottom: "8px" }}>SOP 메뉴얼 등 제작</li>
+          <li style={{ marginBottom: "8px" }}>고객사 엔지니어 장비 교육</li>
         </StyledCareerInfoWork>
       </StyledCareerInfo>
     </CareerWrapper>
   );
 };
 
-export default CareerExicon;
+export default CareerSemics;

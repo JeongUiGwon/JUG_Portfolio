@@ -62,7 +62,14 @@ const Introduce = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+      const scrollPositionValue = section.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: scrollPositionValue,
+        behavior: "smooth",
+      });
     }
   };
   return (
